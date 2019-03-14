@@ -1,4 +1,4 @@
-import { UP_AGE, DOWN_AGE } from './type';
+import { UP_AGE, DOWN_AGE, DELETE_ITEN} from './type';
 
 export const Add_age = payload => {
   return {
@@ -12,4 +12,11 @@ export const Reduce_age = payload => {
     type: DOWN_AGE,
     payload
   }
+}
+
+export const Remove_item = Id => {
+    return {
+        type: DELETE_ITEN,
+        Id
+    }
 }
